@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function DropCatergory() {
 
@@ -13,15 +13,15 @@ function DropCatergory() {
             link: "/"
         },
         {
-            category: "Video Editing",
-            link: "/"
-        },
-        {
-            category: "Animation",
+            category: "Video Editing and Animation",
             link: "/"
         },
         {
             category: "Arts and Drawing",
+            link: "/"
+        },
+        {
+            category: "Music and Melody",
             link: "/"
         },
         {
@@ -41,17 +41,17 @@ function DropCatergory() {
             link: "/"
         }
     ]
-  return (
-    <div>
-      {
-        Categories.map((data, index) => (
-            <div key={index} className='catBlock'>
-                <Link to={data.link} className='catLink'> {data.category} </Link>
-            </div>
-        ))
-      }
-    </div>
-  )
+    return (
+        <div>
+            {
+                Categories.map((data, index) => (
+                    <div key={index} className='catBlock'>
+                        <Link to={data.link} className='catLink'> {data.category} </Link>
+                    </div>
+                ))
+            }
+        </div>
+    )
 }
 
 export default DropCatergory

@@ -8,8 +8,10 @@
 }
 
 .home1 {
-  background-image: url(../Assets/Images/R.jpg);
+  background-image: url(../Assets/Images/business.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   height: 80vh;
   width: 100%;
@@ -20,7 +22,7 @@
 .home1content {
   /* background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.315),rgba(255, 166, 0, 0.315), rgba(255, 255, 0, 0.315)); */
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.479);
   height: 80vh;
   /* color: #fff; */
 }
@@ -50,13 +52,21 @@
   font-family: Bebas_Neue;
 }
 .flip > div > div {
-  color: #fff;
+  color: #c112e4;
+  /* color: #fff; */
   padding: 4px 12px;
   height: 45px;
   margin-bottom: 45px;
   display: inline-block;
   /* font-size: 3rem; */
 }
+.flip div:nth-child(1) div{
+  color: #e48212;
+}
+.flip div:nth-child(2) div{
+  color: #12e41d;
+}
+
 .flip div:first-child {
   animation: show 7s linear infinite;
 }
@@ -86,6 +96,29 @@
   100% {
     margin-top: -270px;
   }
+}
+.home1th {
+  display: flex;
+  justify-content: space-between;
+}
+.desImg {
+  padding-top: 15vh;
+  padding-right: 5%;
+}
+.startbtn {
+  margin: 6vh 0;
+  background-color: #ffffff00;
+  border-color: #00000000;
+  font-size: 2rem;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer;
+}
+.arrowIcon {
+  color: #12e41d;
+}
+.startbtn:hover {
+  transform: scale(1.2);
 }
 /* .desImg{
   background-color: red;
