@@ -2,8 +2,8 @@ import React from "react";
 
 const HomeTwo = () => {
     return ( 
-       <div className="forHomeTwo">
-            <div className="cards">
+       <div className="marquee">
+            <div className="marquee--inner">
                 <span className="home2span">
                     <div className="card1"></div>
                     <div className="card2"></div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import DropCatergory from './DropCatergory'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import DropAbout from './DropAbout'
 
 function Header() {
