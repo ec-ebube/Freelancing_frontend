@@ -1,0 +1,75 @@
+.home1 {
+  background-image: url(../Assets/Images/R.jpg);
+  background-repeat: no-repeat;
+
+  height: 80vh;
+  width: 100%;
+  border-radius: 10px;
+  /* background-color: black; */
+  /* background-image: linear-gradient(to rigth, red, yellow); */
+}
+.home1content {
+  /* background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.315),rgba(255, 166, 0, 0.315), rgba(255, 255, 0, 0.315)); */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.637);
+  height: 80vh;
+  color: #fff;
+}
+.introtext {
+  text-align: left;
+  padding-top: 20vh;
+  padding-left: 5%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  bottom: 45%;
+  display: block;
+}
+.static1 {
+  font-size: 4rem;
+}
+.static2 {
+  font-size: 3rem;
+}
+.flip {
+  height: 50px;
+  overflow: hidden;
+}
+.flip > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+  /* font-size: 3rem; */
+}
+.flip div:first-child {
+  animation: show 7s linear infinite;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}

@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Dancing_Scripts;
+    src: url(../Assets/Fonts/Dancing_Scripts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Pathway;
+    src: url(../Assets/Fonts/Pathway_Gothic/PathwayGothicOne-Regular.ttf);
+}
+
+.header {
+    background-color: #E911D6;
+    display: flex;
+    justify-content: space-between;
+}
+.fortitle {
+    /* border: 2px double #fff; */
+    /* padding-left: 2%; */
+    width: 20%;
+}
+.title {
+    color: blueviolet;
+    font-family: Dancing_Scripts;
+}
+.title a {
+    text-decoration: none;
+    color: #faf9ff;
+}
+.dropdiv {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid #fff; */
+    width: 30%;
+    padding: 10px 3%;
+}
+.lognav {
+    display: flex;
+    width: 20%;
+    /* border: 2px dotted #fff; */
+    padding: 4vh 2%;
+    background-color: #faf9ff;
+    border-radius: 2vw;
+    height: 3vh;
+    margin: auto 0;
+}
+.lognav li {
+    list-style: none;
+    width: 50%;
+}
+.navA {
+    text-decoration: none;
+    /* padding-right: 0.3%; */
+}
+.li4a:first-child a{
+    color: #008800;
+    
+}
+.li4a:last-child a{
+    color: #0d3ddb;
+}
+.li4a:first-child a:hover {
+    color: #0d3ddb;
+    transition: 1s;
+}
+.li4a:last-child a:hover {
+    color: #008800;
+    transition: 1s;
+}
+
+.dropdown {
+    font-family: Pathway;
+    cursor: pointer;
+    font-size: large;
+    color: #e9edf5;
+    /* -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 0.5px; */
+}
+.dropdown:hover .fordrop {
+    display: block;
+}
+.fordrop {
+    /* width: 20%; */
+    display: none;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+/* =====================For the dropdown catergory=========================== */
+.catBlock {
+    display: block;
+    height: 6vh;
+    padding: 1vw;
+    width: 100%;
+    background-color: #eef;
+    border-bottom: 1px dotted #808080;
+}
+.catBlock:hover, .catBlock:hover .catLink {
+    background-color: #6b6b77;
+    color: #faf2f9;
+}
+.catLink {
+    text-decoration: none;
+    color: #6363c0;
+}
