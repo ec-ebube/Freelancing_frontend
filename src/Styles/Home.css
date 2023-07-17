@@ -60,10 +60,10 @@
   display: inline-block;
   /* font-size: 3rem; */
 }
-.flip div:nth-child(1) div{
+.flip div:nth-child(1) div {
   color: #e48212;
 }
-.flip div:nth-child(2) div{
+.flip div:nth-child(2) div {
   color: #12e41d;
 }
 
@@ -125,41 +125,25 @@
 .startbtn:hover .arrowIcon {
   visibility: visible;
   transform: translateX(180px);
+  animation: opaque 0.5s linear;
 }
-/* .desImg{
-  background-color: red;
-  height: 300px;
-} */
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
-/* ==================Home Two Styling ======================== */
-/* .forHomeTwo {
-  width: 100%;
-  position: relative;
-}
-.cards {
-  height: 55vh;
-  display: flex;
-  flex: auto;
-  justify-content: center;
-  width: 350%;
-  overflow: hidden;
-}
-.home2span {
-  height: 55vh;
-  display: inline;
-}
-.home2span > div {
-  height: 50vh;
-  width: 40vw;
-  background-color: brown;
-  margin: 1vh 2vw;
-} */
+/* ============================Home Two Styling ================================== */
 .marquee {
   height: 60vh;
   width: 99%;
-  /* border: 2px solid #eee; */
   overflow: hidden;
-  /* box-sizing: border-box; */
   position: relative;
   margin: 0 auto;
 }
@@ -169,8 +153,7 @@
   width: 500%;
   margin: 2rem 0;
   position: absolute;
-  animation: DCards 20s linear infinite;
-  /* animation-direction: reverse; */
+  animation: DCards 25s linear infinite;
 }
 
 .marquee--inner:hover {
@@ -182,12 +165,43 @@
   background-color: brown;
   margin: 1vh 2vw;
   float: left;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.home2span > div > a {
+  text-decoration: none;
+}
+.home2span > div > a > h2 {
+  color: #fff;
+  font-size: larger;
+  text-align: center;
+  margin: 30% auto;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #E911D6;
+}
+.cardText {
+  color: #fff;
+  font-size: larger;
+  background-color: #dddddd7e;
+  visibility: hidden;
+  padding-bottom: 100%;
+  transition: 1s ease-in-out;
+  animation: cardtext 10s linear;
+}
+@keyframes cardtext {
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .home2span > div:hover {
   transform: scale(1.1);
-  /* opacity: 0.5; */
   cursor: pointer;
+}
+.home2span > div:hover .cardText {
+  visibility: visible;
 }
 .home2span {
   float: left;
@@ -195,6 +209,31 @@
   display: flex;
 }
 @keyframes DCards {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -300%;
+  }
+}
+.home2span > div {
+  width: 40vw;
+  background-color: brown;
+  margin: 1vh 2vw;
+  border-radius: 2rem;
+}
+.card1 {
+  background-image: url(../Assets/Images/Coding&Programming.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card2 {
+  background-image: url(../Assets/Images/Graphics&Design.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3 {
+  background-image: url(../Assets/Images/Boy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
