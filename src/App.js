@@ -3,6 +3,7 @@ import './Styles/Headers.css';
 import './Styles/Home.css';
 import Header from './Neccessary/Header';
 import HomeOne from './Components/HomeOne';
+import HomeTwo from './Components/HomeTwo';
 // import DropCatergory from './Neccessary/DropCatergory';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <HomeOne />
+      <HomeTwo />
     </div>
   );
 }

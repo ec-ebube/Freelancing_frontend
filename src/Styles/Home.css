@@ -73,3 +73,19 @@
     margin-top: -270px;
   }
 }
+
+
+/* ==================Home Two Styling ======================== */
+.cards {
+  height: 55vh;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  width: 350%;
+  overflow: hidden;
+}
+.home2span > div {
+  width: 40vw;
+  background-color: brown;
+  margin: 1vh 2vw;
+}
