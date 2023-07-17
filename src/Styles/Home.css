@@ -115,10 +115,16 @@
   cursor: pointer;
 }
 .arrowIcon {
-  color: #12e41d;
+  fill: #fff;
+  transition: 0.5s;
+  visibility: hidden;
 }
 .startbtn:hover {
   transform: scale(1.2);
+}
+.startbtn:hover .arrowIcon {
+  visibility: visible;
+  transform: translateX(180px);
 }
 /* .desImg{
   background-color: red;
