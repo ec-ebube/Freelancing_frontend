@@ -53,12 +53,10 @@
 }
 .flip > div > div {
   color: #c112e4;
-  /* color: #fff; */
   padding: 4px 12px;
   height: 45px;
   margin-bottom: 45px;
   display: inline-block;
-  /* font-size: 3rem; */
 }
 .flip div:nth-child(1) div {
   color: #e48212;
@@ -101,9 +99,26 @@
   display: flex;
   justify-content: space-between;
 }
-.desImg {
-  padding-top: 15vh;
+.welcomeDiv {
+  height: 40vh;
+  width: 40%;
+  /* background-color: #24e412; */
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 20vh;
+  padding-bottom: 0px;
   padding-right: 5%;
+  border-left: 10px solid #da7019c4;
+  transition: 1s;
+}
+.welcomeDiv:hover {
+  background-color: #da7019c4;
+  transform: scale(1.1);
+  margin-right: 7%;
+}
+.welcomeText {
+  color: #ffffff;
+  font-size: 1.6rem;
 }
 .startbtn {
   margin: 6vh 0;
@@ -176,7 +191,7 @@
   text-align: center;
   margin: 30% auto;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #E911D6;
+  -webkit-text-stroke-color: #e911d6;
 }
 .cardText {
   color: #fff;
@@ -184,13 +199,12 @@
   background-color: #dddddd7e;
   visibility: hidden;
   padding-bottom: 100%;
-  transition: 1s ease-in-out;
   animation: cardtext 10s linear;
+  transition: 1s ease-in-out;
 }
 @keyframes cardtext {
   0% {
     opacity: 0;
-
   }
   100% {
     opacity: 1;
@@ -202,6 +216,13 @@
 }
 .home2span > div:hover .cardText {
   visibility: visible;
+  animation: cardtext1 0.5s linear;
+  /* transform: translateY(10px); */
+}
+@keyframes cardtext1 {
+  0% {
+    transform: translateY(20%);
+  }
 }
 .home2span {
   float: left;
@@ -213,7 +234,7 @@
     left: 0;
   }
   100% {
-    left: -300%;
+    left: -270%;
   }
 }
 .home2span > div {
@@ -233,7 +254,33 @@
   background-size: cover;
 }
 .card3 {
-  background-image: url(../Assets/Images/Boy.png);
+  background-image: url(../Assets/Images/VidAnime.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card4 {
+  background-image: url(../Assets/Images/Arts.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card5 {
+  background-image: url(../Assets/Images/Music.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card6 {
+  background-image: url(../Assets/Images/Modelling.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card7 {
+  background-image: url(../Assets/Images/Architecture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card8 {
+  background-image: url(../Assets/Images/Influencing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
