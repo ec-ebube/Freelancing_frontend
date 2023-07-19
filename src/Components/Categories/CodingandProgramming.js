@@ -10,19 +10,31 @@ function CodingandProgramming() {
     var codeCat = [];
     if (data) {
         data.map((ports) => {
-          if (ports.Category === "Coding and Programming") {
-            codeCat.push(ports)
-    
-          }
-          return 0
-        })
-      }
+            if (ports.Category === "Coding and Programming") {
+                codeCat.push(ports)
 
-  return (
-    <div>
-      
-    </div>
-  )
+            }
+            return 0
+        })
+    }
+    console.log(codeCat);
+
+
+    return (
+        <div>
+            {isLoading && <div>Loading</div>}
+            {error && <div>{Error}</div>}
+            {data && (
+                codeCat.map((d, i) => (
+                    <div className="catData" key={i}>
+                        <p>{d.FirstName}</p>
+                        {/* <img src={d.profilePath} alt="" /> */}
+                    </div>
+                ))
+            )}
+            <p>P tag</p>
+        </div>
+    )
 }
 
 export default CodingandProgramming
