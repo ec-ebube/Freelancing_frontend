@@ -2,6 +2,7 @@ import React from 'react'
 import DropCatergory from './DropCatergory'
 // import { Link } from 'react-router-dom'
 import DropAbout from './DropAbout'
+import { Outlet } from 'react-router-dom'
 
 function Header() {
   
@@ -32,7 +33,7 @@ function Header() {
         </nav>
       </div>
 
-
+      <Outlet />
     </div>
   )
 }

@@ -6,7 +6,7 @@ function DropCatergory() {
     const Categories = [
         {
             category: "Coding and Programming",
-            link: "/"
+            link: "/codingandprogramming"
         },
         {
             category: "Graphics and Design",
