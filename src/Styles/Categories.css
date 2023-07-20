@@ -1,20 +1,65 @@
+@font-face {
+    font-family: Lumanosimo;
+    src: url(../Assets/Fonts/Lumanosimo/Lumanosimo-Regular.ttf);
+}
+
 .catBody {
-  padding: 2vh 1%;
-  /* background-color: #00000031; */
-  background-image: linear-gradient(to right, #bda9eb48 , #ffff0048);
+  box-sizing: border-box;
+  /* padding: 2vh 1%; */
+  background-image: linear-gradient(to right, #bda9eb48, #ffff0048);
   background-size: cover;
   background-attachment: fixed;
   flex: auto;
   flex-wrap: wrap;
   display: flex;
+  justify-content: space-evenly;
+  margin: 0 -5px;
+  width: 100%;
 }
-.catLink {
-    text-decoration: none;
+/* .catBody:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+.catLinkdiv {
+  text-decoration: none;
+  /* margin: 0 1; */
+  float: left;
+  width: 43%;
+  padding: 10px 1%;
+  margin: 1vh 1%;
+  border: 1px dotted grey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .catData {
-    height: 30vh;
-
+    display: flex;
+    gap: 2rem;
+    
 }
 .catImage {
-    height: inherit;
+    width: 25%;
+  height: 30vh;
+  float: left;
+  clear: both;
 }
+.catDetails {
+    text-align: left;
+    font-family: cursive;
+}
+.names {
+    text-align: center;
+    color: #b98d1e;
+    padding: 0;
+    font-family: Lumanosimo;
+
+}
+.skills span{
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .catLinkdiv {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

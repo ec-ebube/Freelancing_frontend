@@ -1,8 +1,12 @@
+.contLoad {
+  width: 100%;
+}
 .loading {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+    padding: 0 auto;
 }
 .loader {
     border: 16px solid #f3f3f3;

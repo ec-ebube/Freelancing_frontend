@@ -14,7 +14,7 @@ function DropCatergory() {
         },
         {
             category: "Video Editing and Animation",
-            link: "/"
+            link: "/category/videoandanimation"
         },
         {
             category: "Arts and Drawing",

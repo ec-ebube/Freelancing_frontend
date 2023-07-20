@@ -4,7 +4,7 @@ import useFetch from '../../Hooks/useFetch';
 import Loading from '../../Neccessary/Loading';
 import { Link } from 'react-router-dom';
 
-function CodingandProgramming() {
+function VideoandAnimation() {
 
     const url = PortfoliosURL;
     const { data, isLoading, error } = useFetch(url);
@@ -13,7 +13,7 @@ function CodingandProgramming() {
     if (data) {
 
         data.map((ports) => {
-            if (ports.Category === "Coding and Programming") {
+            if (ports.Category === "Video Editing and Animation") {
                 codeCat.push(ports)
                 // setProfilePhoto(codeCat.profilePath);
             }
@@ -37,7 +37,6 @@ function CodingandProgramming() {
             {data && (
                 shuffledArray.map((d, i) => (
                     <Link to={"/"} className='catLinkdiv'>
-                    
                         <div className="catData" key={i}>
                             <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
                             <div className="catDetails">
@@ -54,4 +53,4 @@ function CodingandProgramming() {
     )
 }
 
-export default CodingandProgramming
+export default VideoandAnimation;

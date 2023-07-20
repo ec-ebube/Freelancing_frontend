@@ -7,6 +7,7 @@ import Header from './Neccessary/Header';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
 import CodingandProgramming from './Components/Categories/CodingandProgramming';
+import VideoandAnimation from './Components/Categories/VideoandAnimation';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Header />} >
           <Route path='/' element={<Home />}/>
           <Route path='/category/codingandprogramming' element={<CodingandProgramming />}/>
+          <Route path='/category/videoandanimation' element={<VideoandAnimation />}/>
           </Route>
       </Routes>
     </div>

@@ -22,7 +22,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card3">
-                        <a href="/">
+                        <a href="/category/videoandanimation">
                             <h2>Video Editing and Animation</h2>
                             <p className="cardText">
                                 You're a click away from the best Video Editors and Animators
@@ -88,7 +88,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card3">
-                        <a href="/">
+                        <a href="/category/videoandanimation">
                             <h2>Video Editing and Animation</h2>
                             <p className="cardText">
                             You're a click away from the best Video Editors and Animators
