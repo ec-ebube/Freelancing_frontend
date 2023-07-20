@@ -6,7 +6,7 @@ const HomeTwo = () => {
             <div className="marquee--inner">
                 <span className="home2span">
                     <div className="card1">
-                        <a href="/">
+                        <a href="/category/codingandprogramming">
                             <h2>Coding and Programming</h2>
                             <p className="cardText">
                                 You're a click away from the best Developers

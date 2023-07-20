@@ -1,6 +1,7 @@
 import React from 'react'
 import { PortfoliosURL } from '../../EndPoints'
 import useFetch from '../../Hooks/useFetch';
+import Loading from '../../Neccessary/Loading';
 
 function CodingandProgramming() {
 
@@ -22,7 +23,7 @@ function CodingandProgramming() {
 
     return (
         <div>
-            {isLoading && <div>Loading</div>}
+            {isLoading && <div><Loading /></div>}
             {error && <div>{Error}</div>}
             {data && (
                 codeCat.map((d, i) => (
@@ -32,6 +33,7 @@ function CodingandProgramming() {
                     </div>
                 ))
             )}
+            
             <p>P tag</p>
         </div>
     )
