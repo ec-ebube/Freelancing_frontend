@@ -2,6 +2,7 @@ import React from 'react'
 import { PortfoliosURL } from '../../EndPoints'
 import useFetch from '../../Hooks/useFetch';
 import Loading from '../../Neccessary/Loading';
+import { Link } from 'react-router-dom';
 
 function CodingandProgramming() {
 
@@ -10,31 +11,42 @@ function CodingandProgramming() {
 
     var codeCat = [];
     if (data) {
+
         data.map((ports) => {
             if (ports.Category === "Coding and Programming") {
                 codeCat.push(ports)
-
+                // setProfilePhoto(codeCat.profilePath);
             }
             return 0
         })
     }
+
+    function shuffleArray(arr) {
+        return arr.sort(() => Math.random() - 0.5);
+    }
+
+    const shuffledArray = shuffleArray(codeCat);
     console.log(codeCat);
+    console.log(shuffledArray);
 
 
     return (
-        <div>
+        <div className='catBody'>
             {isLoading && <div><Loading /></div>}
             {error && <div>{Error}</div>}
             {data && (
-                codeCat.map((d, i) => (
-                    <div className="catData" key={i}>
-                        <p>{d.FirstName}</p>
-                        {/* <img src={d.profilePath} alt="" /> */}
+                shuffledArray.map((d, i) => (
+                    <Link to={"/"}>
+                        <div className="catData" key={i}>
+                        <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" />
+                        <h2 className='names'>{d.FirstName} {d.LastName}</h2>
+                        <p className='skills'> {d.Skill} </p>
+                        <p className="bio">{d.Bio}</p>
+                        {/* <p className="mail">{d.Email}</p> */}
                     </div>
+                    </Link>
                 ))
             )}
-            
-            <p>P tag</p>
         </div>
     )
 }
