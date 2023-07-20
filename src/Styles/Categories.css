@@ -1,4 +1,20 @@
 .catBody {
   padding: 2vh 1%;
-  background-color: #00000031;
+  /* background-color: #00000031; */
+  background-image: linear-gradient(to right, #bda9eb48 , #ffff0048);
+  background-size: cover;
+  background-attachment: fixed;
+  flex: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+.catLink {
+    text-decoration: none;
+}
+.catData {
+    height: 30vh;
+
+}
+.catImage {
+    height: inherit;
 }

@@ -36,14 +36,14 @@ function CodingandProgramming() {
             {error && <div>{Error}</div>}
             {data && (
                 shuffledArray.map((d, i) => (
-                    <Link to={"/"}>
+                    <Link to={"/"} className='catLink'>
                         <div className="catData" key={i}>
-                        <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" />
-                        <h2 className='names'>{d.FirstName} {d.LastName}</h2>
-                        <p className='skills'> {d.Skill} </p>
-                        <p className="bio">{d.Bio}</p>
-                        {/* <p className="mail">{d.Email}</p> */}
-                    </div>
+                            <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
+                            <h2 className='names'>{d.FirstName} {d.LastName}</h2>
+                            <p className='skills'> {d.Skill} </p>
+                            <p className="bio">{d.Bio}</p>
+                            {/* <p className="mail">{d.Email}</p> */}
+                        </div>
                     </Link>
                 ))
             )}
