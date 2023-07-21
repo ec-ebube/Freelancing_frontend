@@ -33,7 +33,8 @@ function VideoandAnimation() {
         (item) =>
             item.FirstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
             item.LastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            item.Skill.toLowerCase().includes(searchQuery.toLowerCase())
+            item.Skill.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.UserName.toLowerCase().includes(searchQuery.toLowerCase())
     );
     // Step 2: Create a function to handle the search logic and update the state accordingly
     const handleSearch = (e) => {
@@ -45,15 +46,16 @@ function VideoandAnimation() {
         <div className='catBody'>
             <div className="welcome3">
                 {!isLoading && <div><div className='fortext'><h3 className='catTexts'>
-                    Elevate your experience, Connect or Join with the Best Video Editors and Animators through our website today!
+                    Elevate your experience, Connect or Join the Best Video Editors and Animators through our website today!
                 </h3></div>
                     <input
                         type="text"
                         id="myInput"
                         value={searchQuery}
                         onChange={handleSearch}
-                        placeholder="Search"
-                        title="Type in a name"
+                        placeholder="Search this Category"
+                        title="Type to search"
+                        className='searchBar'
                     />
                 </div>}
                 {isLoading && <div className='contLoad'><Loading /></div>}

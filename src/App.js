@@ -15,6 +15,7 @@ import Modelling from './Components/Categories/Modelling';
 import ArchitecturalDesigns from './Components/Categories/ArchitecturalDesigns';
 import Influencing from './Components/Categories/Influencing';
 import Others from './Components/Categories/Others';
+import Portfolio from './Components/Portfolio/Portfolio';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='/category/architecturaldesigns' element={<ArchitecturalDesigns />}/>
           <Route path='/category/influencing' element={<Influencing />}/>
           <Route path='/category/others' element={<Others />}/>
+          <Route path='/portfolio/:username' element={<Portfolio />}/>
           </Route>
       </Routes>
     </div>

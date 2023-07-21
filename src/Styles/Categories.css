@@ -81,6 +81,18 @@
   -webkit-text-stroke-color: #fed;
   -webkit-text-stroke-width: 1px;
 }
+.searchBar {
+  width: 70%;
+  height: 2rem;
+  border: 1px solid #615b5b;
+  border-radius: 1rem;
+  background-color: #ffffffb4;
+  padding: 1px 1%;
+  font-size: 1rem;
+}
+.searchBar:focus {
+  background-color: #fff;
+}
 .catLinkdiv {
   text-decoration: none;
   /* margin: 0 1; */
