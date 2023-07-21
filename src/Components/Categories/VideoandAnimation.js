@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PortfoliosURL } from '../../EndPoints'
 import useFetch from '../../Hooks/useFetch';
 import Loading from '../../Neccessary/Loading';
@@ -27,18 +27,40 @@ function VideoandAnimation() {
 
     const shuffledArray = shuffleArray(codeCat);
 
+    // Step 1: Add state to store the search query and filtered results
+    const [searchQuery, setSearchQuery] = useState("");
+    const filteredArray = shuffledArray.filter(
+        (item) =>
+            item.FirstName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.LastName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            item.Skill.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    // Step 2: Create a function to handle the search logic and update the state accordingly
+    const handleSearch = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
 
     return (
         <div className='catBody'>
             <div className="welcome3">
-                {!isLoading && <div className='fortext'><h3 className='catTexts'>
+                {!isLoading && <div><div className='fortext'><h3 className='catTexts'>
                     Elevate your experience, Connect or Join with the Best Video Editors and Animators through our website today!
-                </h3></div>}
+                </h3></div>
+                    <input
+                        type="text"
+                        id="myInput"
+                        value={searchQuery}
+                        onChange={handleSearch}
+                        placeholder="Search"
+                        title="Type in a name"
+                    />
+                </div>}
                 {isLoading && <div className='contLoad'><Loading /></div>}
                 {error && <div>{Error}</div>}
             </div>
             {data && (
-                shuffledArray.map((d, i) => (
+                filteredArray.map((d, i) => (
                     <Link to={"/portfolio/" + d.UserName} className='catLinkdiv'>
                         <div className="catData" key={i}>
                             <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
