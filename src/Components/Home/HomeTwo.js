@@ -14,7 +14,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card2">
-                        <a href="/">
+                        <a href="/category/graphicsanddesign">
                             <h2>Graphics and Design</h2>
                             <p className="cardText">
                                 You're a click away from the best Designers
@@ -30,7 +30,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card4">
-                        <a href="/">
+                        <a href="/category/artsanddrawing">
                             <h2>Arts and Drawing</h2>
                             <p className="cardText">
                                 You're a click away from the best Artist
@@ -38,7 +38,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card5">
-                        <a href="/">
+                        <a href="/category/musicandmelody">
                             <h2>Music and Melody</h2>
                             <p className="cardText">
                                 You're a click away from the best musicians and Producers
@@ -46,7 +46,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card6">
-                        <a href="/">
+                        <a href="/category/modelling">
                             <h2>Modelling</h2>
                             <p className="cardText">
                                 You're a click away from the best Modellers
@@ -54,7 +54,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card7">
-                        <a href="/">
+                        <a href="/category/architecturaldesigns">
                             <h2>Architectural designs</h2>
                             <p className="cardText">
                                 You're a click away from the best Architects
@@ -62,7 +62,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card8">
-                        <a href="/">
+                        <a href="/category/influencing">
                             <h2>Influencing</h2>
                             <p className="cardText">
                                 You're a click away from the best Influencers
@@ -80,7 +80,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card2">
-                        <a href="/">
+                        <a href="/category/graphicsanddesign">
                             <h2>Graphics and Design</h2>
                             <p className="cardText">
                             You're a click away from the best Designers
@@ -96,7 +96,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card4">
-                        <a href="/">
+                        <a href="/category/artsanddrawing">
                             <h2>Arts and Drawing</h2>
                             <p className="cardText">
                             You're a click away from the best Artist
@@ -104,7 +104,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card5">
-                        <a href="/">
+                        <a href="/category/musicandmelody">
                             <h2>Music and Melody</h2>
                             <p className="cardText">
                             You're a click away from the best musicians and Producers
@@ -112,7 +112,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card6">
-                        <a href="/">
+                        <a href="/category/modelling">
                             <h2>Modelling</h2>
                             <p className="cardText">
                             You're a click away from the best Modellers
@@ -120,7 +120,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card7">
-                        <a href="/">
+                        <a href="/category/architecturaldesigns">
                             <h2>Architectural designs</h2>
                             <p className="cardText">
                                 You're a click away from the best Archtects
@@ -128,7 +128,7 @@ const HomeTwo = () => {
                         </a>
                     </div>
                     <div className="card8">
-                        <a href="/">
+                        <a href="/category/influencing">
                             <h2>Influencing</h2>
                             <p className="cardText">
                             You're a click away from the best Influencers

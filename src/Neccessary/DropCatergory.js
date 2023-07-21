@@ -10,7 +10,7 @@ function DropCatergory() {
         },
         {
             category: "Graphics and Design",
-            link: "/"
+            link: "/category/graphicsanddesign"
         },
         {
             category: "Video Editing and Animation",
@@ -18,27 +18,27 @@ function DropCatergory() {
         },
         {
             category: "Arts and Drawing",
-            link: "/"
+            link: "/category/artsanddrawing"
         },
         {
             category: "Music and Melody",
-            link: "/"
+            link: "/category/musicandmelody"
         },
         {
             category: "Modelling",
-            link: "/"
+            link: "/category/modelling"
         },
         {
             category: "Architectural designs",
-            link: "/"
+            link: "/category/architecturaldesigns"
         },
         {
             category: "Influencing",
-            link: "/"
+            link: "/category/influencing"
         },
         {
             category: "Other Services",
-            link: "/"
+            link: "/category/others"
         }
     ]
     return (

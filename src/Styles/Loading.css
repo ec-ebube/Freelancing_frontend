@@ -1,5 +1,7 @@
 .contLoad {
   width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #bda9eba1, #ffff00a1);
 }
 .loading {
     display: flex;

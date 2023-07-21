@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Lumanosimo;
-    src: url(../Assets/Fonts/Lumanosimo/Lumanosimo-Regular.ttf);
+  font-family: Lumanosimo;
+  src: url(../Assets/Fonts/Lumanosimo/Lumanosimo-Regular.ttf);
 }
 
 .catBody {
@@ -21,6 +21,66 @@
   display: table;
   clear: both;
 } */
+.welcome1 {
+  width: 100%;
+  background-image: url("../Assets/Images/desk-setup-for-developers.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome2 {
+  width: 100%;
+  background-image: url("../Assets/Images/Graphics.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome3 {
+  width: 100%;
+  background-image: url("../Assets/Images/VidAnime.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome4 {
+  width: 100%;
+  background-image: url("../Assets/Images/ArtsandDrawing.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome5 {
+  width: 100%;
+  background-image: url("../Assets/Images/Melody.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome6 {
+  width: 100%;
+  background-image: url("../Assets/Images/Modelwp.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome7 {
+  width: 100%;
+  background-image: url("../Assets/Images/architectural.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.welcome8 {
+  width: 100%;
+  background-image: url("../Assets/Images/Influencerwp.jpg");
+  height: 40vh;
+  background-position: center;
+}
+.fortext{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.catTexts {
+  font-size: 2rem;
+  width: 90%;
+  color: #e911d6;
+  -webkit-text-stroke-color: #fed;
+  -webkit-text-stroke-width: 1px;
+}
 .catLinkdiv {
   text-decoration: none;
   /* margin: 0 1; */
@@ -32,34 +92,32 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .catData {
-    display: flex;
-    gap: 2rem;
-    
+  display: flex;
+  gap: 2rem;
 }
 .catImage {
-    width: 25%;
+  width: 25%;
   height: 30vh;
   float: left;
   clear: both;
 }
 .catDetails {
-    text-align: left;
-    font-family: cursive;
+  text-align: left;
+  font-family: cursive;
 }
 .names {
-    text-align: center;
-    color: #b98d1e;
-    padding: 0;
-    font-family: Lumanosimo;
-
+  text-align: center;
+  color: #b98d1e;
+  padding: 0;
+  font-family: Lumanosimo;
 }
-.skills span{
-    font-weight: bold;
+.skills span {
+  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
-    .catLinkdiv {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+  .catLinkdiv {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
+}

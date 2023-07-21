@@ -4,7 +4,7 @@ import useFetch from '../../Hooks/useFetch';
 import Loading from '../../Neccessary/Loading';
 import { Link } from 'react-router-dom';
 
-function CodingandProgramming() {
+function Influencing() {
 
     const url = PortfoliosURL;
     const { data, isLoading, error } = useFetch(url);
@@ -13,7 +13,7 @@ function CodingandProgramming() {
     if (data) {
 
         data.map((ports) => {
-            if (ports.Category === "Coding and Programming") {
+            if (ports.Category === "Influencing") {
                 codeCat.push(ports)
                 // setProfilePhoto(codeCat.profilePath);
             }
@@ -30,9 +30,9 @@ function CodingandProgramming() {
 
     return (
         <div className='catBody'>
-            <div className="welcome1">
+            <div className="welcome8">
                 {!isLoading && <div className='fortext'><h3 className='catTexts'>
-                    Elevate your experience, Connect or Join with the Best Developers through our website today!
+                    Elevate your experience, Connect or Join with the Best Influencers through our website today!
                 </h3></div>}
                 {isLoading && <div className='contLoad'><Loading /></div>}
                 {error && <div>{Error}</div>}
@@ -57,4 +57,4 @@ function CodingandProgramming() {
     )
 }
 
-export default CodingandProgramming
+export default Influencing;

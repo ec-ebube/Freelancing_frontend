@@ -26,17 +26,20 @@ function VideoandAnimation() {
     }
 
     const shuffledArray = shuffleArray(codeCat);
-    console.log(codeCat);
-    console.log(shuffledArray);
 
 
     return (
         <div className='catBody'>
-            {isLoading && <div className='contLoad'><Loading /></div>}
-            {error && <div>{Error}</div>}
+            {!isLoading && <div className='fortext'><h3 className='catTexts'>
+                Elevate your experience, Connect or Join with the Best Video Editors and Animators through our website today!
+            </h3></div>}
+            <div className="welcome3">
+                {isLoading && <div className='contLoad'><Loading /></div>}
+                {error && <div>{Error}</div>}
+            </div>
             {data && (
                 shuffledArray.map((d, i) => (
-                    <Link to={"/"} className='catLinkdiv'>
+                    <Link to={"/portfolio/" + d.UserName} className='catLinkdiv'>
                         <div className="catData" key={i}>
                             <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
                             <div className="catDetails">
