@@ -13,7 +13,7 @@ function Others() {
     if (data) {
 
         data.map((ports) => {
-            if ((ports.Category === "Others") && (ports.Category === null)) {
+            if ((ports.Category === "Others") || (ports.Category === null)) {
                 codeCat.push(ports)
                 // setProfilePhoto(codeCat.profilePath);
             }
@@ -47,7 +47,7 @@ function Others() {
                                 <h2 className='names'>{d.FirstName} {d.LastName}</h2>
                                 <p className='skills'><span>Skill(s):</span> {d.Skill} </p>
                                 <p className="bio">{d.Bio}</p>
-                                {/* <p className="mail">{d.Email}</p> */}
+                                {/* <p className="thecate">{d.Category}</p> */}
                             </div>
                         </div>
                     </Link>

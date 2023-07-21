@@ -30,10 +30,10 @@ function VideoandAnimation() {
 
     return (
         <div className='catBody'>
-            {!isLoading && <div className='fortext'><h3 className='catTexts'>
-                Elevate your experience, Connect or Join with the Best Video Editors and Animators through our website today!
-            </h3></div>}
             <div className="welcome3">
+                {!isLoading && <div className='fortext'><h3 className='catTexts'>
+                    Elevate your experience, Connect or Join with the Best Video Editors and Animators through our website today!
+                </h3></div>}
                 {isLoading && <div className='contLoad'><Loading /></div>}
                 {error && <div>{Error}</div>}
             </div>
