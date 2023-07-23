@@ -15,17 +15,17 @@ function Header() {
           <h1 className='title'><a href="/">Little Effect</a></h1>
         </div>
         <div className='dropdiv'>
-          <p className="dropdown">Categories
+          <div className="dropdown"><p>Categories</p>
             <div className="fordrop">
               <DropCatergory />
             </div>
-          </p>
-          <p className="dropdown"> About 
+          </div>
+          <div className="dropdown"><p>About</p>  
             <div className="fordrop">
               <DropAbout />
             </div>
-          </p>
-          <p className="dropdown"> Find </p>
+          </div>
+          <div className="dropdown"> <p>Find</p> </div>
         </div>
         <nav className='lognav'>
           <li className="li4a"><a href="/" className='navA'>Login</a></li>

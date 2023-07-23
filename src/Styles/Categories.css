@@ -16,11 +16,6 @@
   margin: 0 -5px;
   width: 100%;
 }
-/* .catBody:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 .welcome1 {
   width: 100%;
   background-image: url("../Assets/Images/desk-setup-for-developers.jpg");
@@ -69,6 +64,12 @@
   height: 40vh;
   background-position: center;
 }
+.welcome9 {
+  width: 100%;
+  background-image: url("../Assets/Images/Others.jpg");
+  height: 40vh;
+  background-position: center;
+}
 .fortext{
   width: 95%;
   display: flex;
@@ -82,16 +83,18 @@
   -webkit-text-stroke-width: 1px;
 }
 .searchBar {
-  width: 70%;
+  width: 40%;
   height: 2rem;
   border: 1px solid #615b5b;
   border-radius: 1rem;
   background-color: #ffffffb4;
   padding: 1px 1%;
   font-size: 1rem;
+  transition: 1s;
 }
 .searchBar:focus {
   background-color: #fff;
+  width: 70%;
 }
 .catLinkdiv {
   text-decoration: none;
