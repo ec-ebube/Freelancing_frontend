@@ -1,5 +1,5 @@
 import React from 'react'
-import { singlePortfolio } from '../../EndPoints';
+import { ProjectsURL, singlePortfolio } from '../../EndPoints';
 import useFetch from '../../Hooks/useFetch';
 import { useParams } from 'react-router-dom';
 import Loading from '../../Neccessary/Loading';
@@ -7,9 +7,18 @@ import Loading from '../../Neccessary/Loading';
 function Portfolio() {
 
   const { username } = useParams();
-  // console.log(username)
   const url = singlePortfolio + username;
+  const url2 = ProjectsURL;
   const { data: PortfolioData, isLoading, error } = useFetch(url);
+  const { data: ProjectData } = useFetch(url2);
+
+  const PortProject = [];
+  // console.log(ProjectData.Title);
+  if (ProjectData) {
+    if (ProjectData) {
+      
+    }
+  }
 
   // console.log(PortfolioData.FirstName);
 
@@ -26,6 +35,11 @@ function Portfolio() {
             <h3>{PortfolioData.FirstName} {PortfolioData.LastName}</h3>
             <h5>@{PortfolioData.UserName}</h5>
           </div>
+        </div>
+        <div>
+          <p>Bio: {PortfolioData.Bio}</p>
+          <p>Category: {PortfolioData.Category}</p>
+          <p>Skill: {PortfolioData.Skill}</p>
         </div>
       </div>}
     </div>
