@@ -63,7 +63,7 @@ function Modelling() {
             </div>
             {data && (
                 filteredArray.map((d, i) => (
-                    <Link to={"/portfolio/" + d.UserName} className='catLinkdiv'>
+                    <Link to={`/portfolio/${d.UserName}`} className='catLinkdiv'>
 
                         <div className="catData" key={i}>
                             <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
