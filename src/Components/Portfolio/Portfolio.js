@@ -25,10 +25,10 @@ function Portfolio() {
   
 
   return (
-    <div>
+    <div className="PortBody">
       {isLoading && <div className='contLoad'><Loading /></div>}
       {error && <div>{Error}</div>}
-      {PortfolioData && <div>
+      {PortfolioData && <div className="portData">
         <div>
           <div>
             <img src={require(`../../../../Backend/${PortfolioData.ProfilePath}`)} alt=""></img>

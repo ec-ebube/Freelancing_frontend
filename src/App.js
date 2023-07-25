@@ -3,6 +3,7 @@ import './Styles/Headers.css';
 import './Styles/Home.css';
 import './Styles/Loading.css'
 import './Styles/Categories.css'
+import './Styles/Portfolio.css'
 import Header from './Neccessary/Header';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
@@ -22,20 +23,20 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Header />} >
-          <Route path='/' element={<Home />}/>
-          <Route path='/category/codingandprogramming' element={<CodingandProgramming />}/>
-          <Route path='/category/videoandanimation' element={<VideoandAnimation />}/>
-          <Route path='/category/graphicsanddesign' element={<GraphicsandDesign />}/>
-          <Route path='/category/artsanddrawing' element={<ArtsandDrawing />}/>
-          <Route path='/category/musicandmelody' element={<MusicandMelody />}/>
-          <Route path='/category/modelling' element={<Modelling />}/>
-          <Route path='/category/architecturaldesigns' element={<ArchitecturalDesigns />}/>
-          <Route path='/category/influencing' element={<Influencing />}/>
-          <Route path='/category/others' element={<Others />}/>
-          <Route path='/portfolio/:username' element={<Portfolio />}/>
-          </Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/category/codingandprogramming' element={<CodingandProgramming />} />
+          <Route path='/category/videoandanimation' element={<VideoandAnimation />} />
+          <Route path='/category/graphicsanddesign' element={<GraphicsandDesign />} />
+          <Route path='/category/artsanddrawing' element={<ArtsandDrawing />} />
+          <Route path='/category/musicandmelody' element={<MusicandMelody />} />
+          <Route path='/category/modelling' element={<Modelling />} />
+          <Route path='/category/architecturaldesigns' element={<ArchitecturalDesigns />} />
+          <Route path='/category/influencing' element={<Influencing />} />
+          <Route path='/category/others' element={<Others />} />
+          <Route path='/portfolio/:username' element={<Portfolio />} />
+        </Route>
 
-          {/* <Route path='*' element={<NotFound />} /> */}
+        {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
     </div>
   );
