@@ -13,14 +13,16 @@ function Portfolio() {
   const { data: ProjectData } = useFetch(url2);
 
   const PortProject = [];
-  // console.log(ProjectData.Title);
-  if (ProjectData) {
-    if (ProjectData) {
-      
-    }
+  if (PortfolioData && ProjectData) {
+    ProjectData.map((proj) => {
+      if (proj.Portfolio_Id === PortfolioData.Id) {
+        PortProject.push(proj);
+      }
+      return 0;
+    })
   }
-
-  // console.log(PortfolioData.FirstName);
+  console.log(PortProject);
+  
 
   return (
     <div>
@@ -40,6 +42,18 @@ function Portfolio() {
           <p>Bio: {PortfolioData.Bio}</p>
           <p>Category: {PortfolioData.Category}</p>
           <p>Skill: {PortfolioData.Skill}</p>
+        </div>
+        <div>
+          {PortProject && (
+            PortProject.map((Dprojects, Index) => {
+              return (
+                <div>
+                  <h5>{Dprojects.Title}</h5>
+                </div>
+              );
+            })
+          )
+          }
         </div>
       </div>}
     </div>

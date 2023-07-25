@@ -34,6 +34,8 @@ function App() {
           <Route path='/category/others' element={<Others />}/>
           <Route path='/portfolio/:username' element={<Portfolio />}/>
           </Route>
+
+          {/* <Route path='*' element={<NotFound />} /> */}
       </Routes>
     </div>
   );
