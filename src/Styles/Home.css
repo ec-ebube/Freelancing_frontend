@@ -6,6 +6,10 @@
   font-family: Bebas_Neue;
   src: url(../Assets/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
+@font-face {
+  font-family: Borel;
+  src: url(../Assets/Fonts/Borel/Borel-Regular.ttf);
+}
 
 .home1 {
   background-image: url(../Assets/Images/business.jpg);
@@ -119,6 +123,7 @@
 .welcomeText {
   color: #ffffff;
   font-size: 1.6rem;
+  font-family: Borel;
 }
 .startbtn {
   margin: 6vh 0;
@@ -188,8 +193,10 @@
 .home2span > div > a > h2 {
   color: #fff;
   font-size: larger;
+  font-weight: bold;
   text-align: center;
   margin: 30% auto;
+  font-family: Borel;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #e911d6;
 }

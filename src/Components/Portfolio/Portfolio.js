@@ -21,8 +21,17 @@ function Portfolio() {
       return 0;
     })
   }
-  console.log(PortProject);
 
+  // const videoRef = React.useRef(null);
+
+  // const handleHover = () => {
+  //   videoRef.current.play();
+  // };
+
+  // const handleMouseLeave = () => {
+  //   videoRef.current.pause();
+  //   videoRef.current.currentTime = 0; // Resets the video to the beginning when hovering stops
+  // };
 
   return (
     <div className="PortBody">
@@ -47,25 +56,41 @@ function Portfolio() {
           </div>
         </div>
         <div>
+          <h3>PROJECTS</h3>
           {PortProject && (
             PortProject.map((Dprojects, Index) => (
-              <div key={Index}>
-                {((Dprojects.ProjectImagePath != null) && (Dprojects.ProjectVideoPath == null)) && <div>
-                  <img src={require(`../../../../Backend/${Dprojects.ProjectImagePath}`)} alt="" className='projImage' />
-                </div>}
-                {((Dprojects.ProjectImagePath == null) && (Dprojects.ProjectVideoPath != null)) && <div>
-                  <video src={require(`../../../../Backend/${Dprojects.ProjectVideoPath}`)} alt="" className='projVideo' controls ></video>
+              <div key={Index} className='Projects'>
+                <div className="projContent">
+                  {((Dprojects.ProjectImagePath != null) && (Dprojects.ProjectVideoPath == null)) && <div>
+                    <img
+                      src={require(`../../../../Backend/${Dprojects.ProjectImagePath}`)}
+                      alt=""
+                      className='projImage' />
+                  </div>}
+                  {((Dprojects.ProjectImagePath == null) && (Dprojects.ProjectVideoPath != null)) && <div
+                    // onMouseEnter={handleHover}
+                    // onMouseLeave={handleMouseLeave}
+                  >
+                    <video
+                      // ref={videoRef}
+                      src={require(`../../../../Backend/${Dprojects.ProjectVideoPath}`)}
+                      alt=""
+                      className='projVideo'
+                      controls
+                    ></video>
 
-                </div>}
-                <div className="projDetails">
-                  {Dprojects.Title}
+                  </div>}
+                  <div className="projDetails">
+                    <h4>{Dprojects.Title}</h4>
+                    <p>{Dprojects.Description}</p>
+                  </div>
                 </div>
               </div>
             ))
           )
           }
           {(PortProject.length === 0) && <div>
-            <h3>No Projects Uploaded Yet</h3>
+            <h4>No Projects Uploaded Yet</h4>
           </div>}
         </div>
       </div>}

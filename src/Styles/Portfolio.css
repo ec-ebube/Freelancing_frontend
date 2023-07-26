@@ -3,9 +3,13 @@
   src: url(../Assets/Fonts/Dancing_Scripts/DancingScript-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: Pathway;
-    src: url(../Assets/Fonts/Pathway_Gothic/PathwayGothicOne-Regular.ttf);
-  }
+  font-family: Pathway;
+  src: url(../Assets/Fonts/Pathway_Gothic/PathwayGothicOne-Regular.ttf);
+}
+@font-face {
+  font-family: Borel;
+  src: url(../Assets/Fonts/Borel/Borel-Regular.ttf);
+}
 
 .PortBody {
   background-color: #24e4546c;
@@ -13,19 +17,15 @@
   /* height: 100%; */
 }
 .portData {
-    width: 100%;
+  width: 100%;
 }
 .port1sect {
   background-color: #e911d6;
   display: flex;
   width: 90%;
   gap: 5rem;
-  /* justify-self: center; */
   margin: 0 auto;
 }
-/* .PortImgDiv {
-    padding: 10px 2%;
-} */
 .profilePic {
   height: 30rem;
   border-radius: 50%;
@@ -41,14 +41,44 @@
   -webkit-text-stroke-width: 1px;
 }
 .portUser {
-    color: #fdfeff;
-    font-family: Dancing_Scripts;
-    font-size: larger;
+  color: #fdfeff;
+  font-family: Dancing_Scripts;
+  font-size: larger;
 }
 .portOthers {
-    text-align: left;
-    color: #fff;
-    font-size: 1.6em;
-    font-weight: 500;
-    font-family: Pathway;
+  text-align: left;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 500;
+  font-family: Pathway;
+}
+/* ================For the projects=================== */
+.Projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 1%;
+  /* border: 1px dotted gray; */
+}
+.projContent {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px dotted gray; */
+  box-shadow: 2px 2px 5px #a1959a;
+  /* box-shadow: -2px -2px 5px #a1959a; */
+}
+.projImage,
+.projVideo {
+  height: 18rem;
+  cursor: pointer;
+}
+.projDetails {
+  width: 100%;
+}
+.projDetails > h4 {
+  color: #e911d6;
+  font-family: Borel;
+  font-size: larger;
+  font-weight: 900;
 }

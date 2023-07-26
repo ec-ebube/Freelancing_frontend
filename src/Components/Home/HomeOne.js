@@ -1,8 +1,12 @@
 import React from 'react'
-// import BusiClass from "../../Assets/Images/business.jpg"
-// import arrow_forward from "../../Assets/Icons/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg"
+import { useNavigate } from 'react-router-dom'
 
 function HomeOne() {
+ const navigate = useNavigate();
+  const toCreatePort = () => {
+    navigate("/createportfolio")
+  }
+
   return (
     <div className='home1'>
       <div className="home1content">
@@ -23,7 +27,7 @@ function HomeOne() {
           </div>
         </div>
         <div className="forbtn">
-          <button className='startbtn' >
+          <button className='startbtn' onClick={toCreatePort}>
             <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960" width="48" className='arrowIcon'>
               <path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" />
             </svg>
