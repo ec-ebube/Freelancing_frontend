@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProjectsURL, singlePortfolio } from '../../EndPoints';
 import useFetch from '../../Hooks/useFetch';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Loading from '../../Neccessary/Loading';
 
 function Portfolio() {
@@ -48,25 +48,20 @@ function Portfolio() {
         </div>
         <div>
           {PortProject && (
-            PortProject.map((Dprojects, Index) => {
-              return (
-                <Link to={`/`} className='catLinkdiv' key={Index}>
+            PortProject.map((Dprojects, Index) => (
+              <div key={Index}>
+                {((Dprojects.ProjectImagePath != null) && (Dprojects.ProjectVideoPath == null)) && <div>
+                  <img src={require(`../../../../Backend/${Dprojects.ProjectImagePath}`)} alt="" className='projImage' />
+                </div>}
+                {((Dprojects.ProjectImagePath == null) && (Dprojects.ProjectVideoPath != null)) && <div>
+                  <video src={require(`../../../../Backend/${Dprojects.ProjectVideoPath}`)} alt="" className='projVideo' controls ></video>
 
-                  <div className="catData">
-                    {((Dprojects.ProjectImagePath != null) && (Dprojects.ProjectVideoPath == null)) && <div>
-                      <img src={require(`../../../../Backend/${Dprojects.ProjectImagePath}`)} alt="" className='catImage' />
-                    </div>}
-                    {((Dprojects.ProjectImagePath == null) && (Dprojects.ProjectVideoPath != null)) && <div>
-                      {/* <img src={require(`../../../../Backend/${Dprojects.ProjectVideoPath}`)} alt="" className='catImage' /> */}
-                    <video src={require(`../../../../Backend/${Dprojects.ProjectVideoPath}`)} alt="" className='catImage' controls ></video>
-                    </div>}
-                    <div className="catDetails">
-
-                    </div>
-                  </div>
-                </Link>
-              );
-            })
+                </div>}
+                <div className="projDetails">
+                  {Dprojects.Title}
+                </div>
+              </div>
+            ))
           )
           }
           {(PortProject.length === 0) && <div>
