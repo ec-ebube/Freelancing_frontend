@@ -1,4 +1,53 @@
+@font-face {
+  font-family: Dancing_Scripts;
+  src: url(../Assets/Fonts/Dancing_Scripts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Pathway;
+    src: url(../Assets/Fonts/Pathway_Gothic/PathwayGothicOne-Regular.ttf);
+  }
+
 .PortBody {
-    background-color: #24e454b2;
-    
+  background-color: #24e4546c;
+  padding: 10px 1%;
+}
+.portData {
+    width: 100%;
+}
+.port1sect {
+  background-color: #e911d6;
+  display: flex;
+  width: 90%;
+  gap: 5rem;
+  /* justify-self: center; */
+  margin: 0 auto;
+}
+/* .PortImgDiv {
+    padding: 10px 2%;
+} */
+.profilePic {
+  height: 30rem;
+  border-radius: 50%;
+}
+.portText {
+  width: 50%;
+}
+.portName {
+  padding: 1rem 0 0 0;
+  font-size: 2rem;
+  color: #e911d6;
+  -webkit-text-stroke-color: #fed;
+  -webkit-text-stroke-width: 1px;
+}
+.portUser {
+    color: #fdfeff;
+    font-family: Dancing_Scripts;
+    font-size: larger;
+}
+.portOthers {
+    text-align: left;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: Pathway;
 }
