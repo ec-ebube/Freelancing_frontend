@@ -4,6 +4,7 @@ import './Styles/Home.css';
 import './Styles/Loading.css'
 import './Styles/Categories.css'
 import './Styles/Portfolio.css'
+import './Styles/CreatePort.css'
 import Header from './Neccessary/Header';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';

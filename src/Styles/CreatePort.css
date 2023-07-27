@@ -1,0 +1,12 @@
+
+.Createportfolio {
+    display: flex;
+    justify-content: center;
+    padding: 15vh 10%;
+}
+
+.DeBox {
+    height: 50vh;
+    width: 50%;
+    background-color: #fdd0fa;
+}
