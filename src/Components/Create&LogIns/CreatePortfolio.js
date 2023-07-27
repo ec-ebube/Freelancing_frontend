@@ -63,7 +63,7 @@ const CreatePortfolio = () => {
     //     }
     // }
     const handN = () => {
-        if (first < Questions.length-1) {
+        if (first < Questions.length - 1) {
             setFirst(first + 1);
             // console.log(Questions[first].Question);
         } else {
@@ -71,7 +71,7 @@ const CreatePortfolio = () => {
         }
     }
     const handP = () => {
-        if ( (first > 0)) {
+        if ((first > 0)) {
             setFirst(first - 1);
             // console.log(Questions[first].Question);
         } else {
