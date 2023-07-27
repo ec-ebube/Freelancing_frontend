@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
+
+const exportCat = [];
 function DropCatergory() {
 
     const Categories = [
@@ -41,6 +43,11 @@ function DropCatergory() {
             link: "/category/others"
         }
     ]
+    // exportCat = Categories;
+    for (let index = 0; index < Categories.length; index++) {
+        exportCat.push({category: Categories[index].category})
+    }
+    // return Categories;
     return (
         <div>
             {
@@ -53,5 +60,6 @@ function DropCatergory() {
         </div>
     )
 }
+export const forCategories = exportCat;
 
 export default DropCatergory

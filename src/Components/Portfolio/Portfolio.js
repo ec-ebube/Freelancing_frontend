@@ -40,7 +40,8 @@ function Portfolio() {
       {PortfolioData && <div className="portData">
         <div className='port1sect'>
           <div className='PortImgDiv'>
-            <img src={require(`../../../../Backend/${PortfolioData.ProfilePath}`)} alt="" className='profilePic'></img>
+            {(PortfolioData.ProfilePath != null) && 
+            <img src={require(`../../../../Backend/${PortfolioData.ProfilePath}`)} alt="" className='profilePic'></img>}
           </div>
           <div className="portContext">
             <div className='portText'>

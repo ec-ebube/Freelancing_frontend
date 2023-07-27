@@ -65,7 +65,8 @@ function MusicandMelody() {
                     <Link to={`/portfolio/${d.UserName}`} className='catLinkdiv'>
 
                         <div className="catData" key={i}>
-                            <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />
+                            {(d.ProfilePath != null) && 
+                            <img src={require(`../../../../Backend/${d.ProfilePath}`)} alt="" className='catImage' />}
                             <div className="catDetails">
                                 <h2 className='names'>{d.FirstName} {d.LastName}</h2>
                                 <p className='skills'><span>Skill(s):</span> {d.Skill} </p>
