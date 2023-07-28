@@ -47,7 +47,7 @@ const CreatePortfolio = () => {
     const [UserName, setUserName] = useState("")
     const [Skill, setSkill] = useState("")
     const [Category, setCategory] = useState("")
-    const [ProfilePhoto, setprofilePhoto] = useState("")
+    const [ProfilePhoto, setProfilePhoto] = useState()
     const { createUser, isLoading, error } = useCreate()
 
     const handleSubmit = async (e) => {
@@ -163,7 +163,7 @@ const CreatePortfolio = () => {
                                 type="file"
                                 className="input"
                                 name="ProfilePhoto"
-                                onChange={(e) => setprofilePhoto(e.target.value)}
+                                onChange={(e) => setProfilePhoto(e.target.value)}
                             />
                         </div>
                         <div className="questiondiv">
