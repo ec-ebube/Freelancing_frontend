@@ -47,8 +47,16 @@ const CreatePortfolio = () => {
     const [UserName, setUserName] = useState("")
     const [Skill, setSkill] = useState("")
     const [Category, setCategory] = useState("")
-    const [ProfilePhoto, setProfilePhoto] = useState()
+    const [ProfilePhoto, setProfilePhoto] = useState(null)
+    const [disPlayPhoto, setDisPlayPhoto] = useState(null)
     const { createUser, isLoading, error } = useCreate()
+
+    const handleFileChange = (event) => {
+        setProfilePhoto(event.target.files[0]);
+        // event.target.file[0]
+        setDisPlayPhoto(ProfilePhoto)
+        console.log(event.target.files)
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -72,9 +80,11 @@ const CreatePortfolio = () => {
 
 
     return (
-        <div className="Createportfolio">
+        <div>
             {isLoading && <div className='contLoad'><Loading /></div>}
             {error && <div>{Error}</div>}
+            {!isLoading &&
+            <div className="Createportfolio">
             <div className="cont">
                 <h2 className="qtittle">Create a Portfolio in 5 mins</h2>
                 <div className="DeBox">
@@ -138,8 +148,7 @@ const CreatePortfolio = () => {
                                 required
                                 onChange={(e) => setCategory(e.target.value)}>
                                 <option value=""
-                                    disabled
-                                    selected>Select a Category</option>
+                                     defaultValue>Select a Category</option>
                                 {
                                     forCategories.map((d, i) => (
                                         <option value={d.Category} key={i} className="input">{d.Category}</option>
@@ -158,12 +167,17 @@ const CreatePortfolio = () => {
                             />
                         </div>
                         <div className="questiondiv">
-                            <label htmlFor="ProfilePhoto" className="question">Upload a Profile picture</label>
+                            {(disPlayPhoto != null) ? 
+                            <img src={require()} alt="" /> :
+                            <img src="" alt="" />
+                        }
+                            <label htmlFor="ProfilePhoto" className="question" >Upload a Profile picture</label>
                             <input
                                 type="file"
+                                accept="image/*"
                                 className="input"
                                 name="ProfilePhoto"
-                                onChange={(e) => setProfilePhoto(e.target.value)}
+                                onChange={handleFileChange}
                             />
                         </div>
                         <div className="questiondiv">
@@ -186,6 +200,8 @@ const CreatePortfolio = () => {
                     </form>
                 </div>
             </div>
+        </div> 
+            }
         </div>
     );
 }
