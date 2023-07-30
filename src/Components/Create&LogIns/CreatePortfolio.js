@@ -48,13 +48,13 @@ const CreatePortfolio = () => {
     const [Skill, setSkill] = useState("")
     const [Category, setCategory] = useState("")
     const [ProfilePhoto, setProfilePhoto] = useState(null)
-    const [disPlayPhoto, setDisPlayPhoto] = useState(null)
+    // const [disPlayPhoto, setDisPlayPhoto] = useState(null)
     const { createUser, isLoading, error } = useCreate()
 
     const handleFileChange = (event) => {
         setProfilePhoto(event.target.files[0]);
         // event.target.file[0]
-        setDisPlayPhoto(event.target.files[0].webkitRelativePath)
+        // setDisPlayPhoto(event.target.files[0].webkitRelativePath)
         console.log(event.target.files)
     };
 

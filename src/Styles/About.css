@@ -1,0 +1,56 @@
+@font-face {
+    font-family: VT323;
+    src: url(../Assets/Fonts/VT323/VT323-Regular.ttf);
+  }
+
+.about {
+    padding: 20px 1%;
+}
+.aboutContent > div {
+    height: 35vh;
+    width: 30%;
+    background-color: #ee009b3b;
+    border-left: 15px solid #e09;
+    margin-bottom: 10px;
+    padding-top: 10vh;
+    box-shadow: 3px 3px 5px #5c5057;
+    color: #726d68;
+    font-size: 1.2rem;
+}
+.aboutContent > div > span {
+    font-weight: bold;
+    display: block;
+    color: #302d2d;
+    font-family: VT323;
+    font-size: 2rem;
+}
+.cardOne {
+    /* animation-name: cardOne;
+    animation-iteration-count: infinite; */
+    animation: cardOne 25s infinite both;
+}
+.cardTwo {
+    animation: cardTwo 25s infinite both;
+}
+@keyframes cardOne {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes cardTwo {
+    0% {
+        transform: translateX(200%);
+    }
+    50% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}

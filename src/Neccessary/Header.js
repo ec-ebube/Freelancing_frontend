@@ -2,10 +2,14 @@ import React from 'react'
 import DropCatergory from './DropCatergory'
 // import { Link } from 'react-router-dom'
 // import DropAbout from './DropAbout'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 
 function Header() {
+  const navigate = useNavigate();
   
+  const about =() => {
+    navigate("/about");
+  }
 
   return (
     <div>
@@ -20,16 +24,12 @@ function Header() {
               <DropCatergory />
             </div>
           </div>
-          {/* <div className="dropdown"><p>About</p>  
-            <div className="fordrop">
-              <DropAbout />
-            </div>
-          </div>
-           <div className="dropdown"> <p>Find</p> </div> */}
+          <div className="dropdown"><p onClick={about}>About</p></div>
+           {/* <div className="dropdown"> <p>Find</p> </div> */}
         </div>
         <nav className='lognav'>
           <li className="li4a"><a href="/" className='navA'>Login</a></li>
-          <li className="li4a"><a href="/" className='navA'>Sign Up</a></li>
+          <li className="li4a"><a href="/createportfolio" className='navA'>Sign Up</a></li>
         </nav>
       </div>
 

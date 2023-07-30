@@ -5,6 +5,8 @@ import './Styles/Loading.css'
 import './Styles/Categories.css'
 import './Styles/Portfolio.css'
 import './Styles/CreatePort.css'
+import './Styles/About.css'
+import './Styles/Footer.css'
 import Header from './Neccessary/Header';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
@@ -19,6 +21,7 @@ import Influencing from './Components/Categories/Influencing';
 import Others from './Components/Categories/Others';
 import Portfolio from './Components/Portfolio/Portfolio';
 import CreatePortfolio from './Components/Create&LogIns/CreatePortfolio';
+import About from './Components/About';
 
 function App() {
   return (
@@ -37,6 +40,7 @@ function App() {
           <Route path='/category/others' element={<Others />} />
           <Route path='/portfolio/:username' element={<Portfolio />} />
           <Route path='/createportfolio' element={<CreatePortfolio />} />
+          <Route path='/about' element={<About />} />
         </Route>
 
         {/* <Route path='*' element={<NotFound />} /> */}

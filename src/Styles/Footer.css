@@ -1,0 +1,17 @@
+.footer {
+  background-color: #ffffff48;
+  width: 100%;
+  border-top: 5px solid #e71898;
+}
+.follow {
+    font-size: large;
+    font-weight: bold;
+    color: #5c3f5c;
+}
+a {
+    text-decoration: none;
+    color: #5c3f5c;
+}
+.soc {
+    text-transform: uppercase;
+}

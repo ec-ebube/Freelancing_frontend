@@ -3,6 +3,7 @@ import { ProjectsURL, singlePortfolio } from '../../EndPoints';
 import useFetch from '../../Hooks/useFetch';
 import { useParams } from 'react-router-dom';
 import Loading from '../../Neccessary/Loading';
+import Footer from '../../Neccessary/Footer';
 
 function Portfolio() {
 
@@ -95,6 +96,7 @@ function Portfolio() {
           </div>}
         </div>
       </div>}
+      <Footer />
     </div>
   )
 }

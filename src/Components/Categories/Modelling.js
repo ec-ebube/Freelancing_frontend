@@ -3,6 +3,7 @@ import { PortfoliosURL } from '../../EndPoints'
 import useFetch from '../../Hooks/useFetch';
 import Loading from '../../Neccessary/Loading';
 import { Link } from 'react-router-dom';
+import Footer from '../../Neccessary/Footer';
 
 function Modelling() {
 
@@ -77,6 +78,7 @@ function Modelling() {
                     </Link>
                 ))
             )}
+            <Footer />
         </div>
     )
 }
