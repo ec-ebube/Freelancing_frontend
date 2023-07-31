@@ -8,31 +8,35 @@
     justify-content: center;
 }
 .cont {
-    width: 50%;
+    width: 80%;
 }
 .DeBox {
-    background-color: #e911d78f;
+    /* background-color: #e911d78f; */
     width: 100%;
     height: 80vh;
     margin-bottom: 2rem;
     padding: 1em;
 }
+.questiondiv {
+    width: 100%;
+}
 .questiondiv > label {
     display: block;
     text-align: center;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1.5rem;
     font-family: Pathway;
 }
 .questiondiv > input, .questiondiv > select {
-    border-radius: 5rem;
-    width: 70%;
-    height: 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    height: 2rem;
+    padding: 5px;
     /* background-color: #ffffffea; */
 }
 .submit {
     width: 30%;
-    height: 2rem;
+    height: 2.5rem;
     margin: 10px;
     cursor: pointer;
     color: #fed;
@@ -40,7 +44,7 @@
     font-weight: bold;
     transition: 1s;
     border: 1px solid #183f47;
-    border-radius: 50rem;
+    border-radius: 15px;
 }
 .submit:hover{
     transform: scale(1.1);

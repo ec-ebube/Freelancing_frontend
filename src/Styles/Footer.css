@@ -1,17 +1,21 @@
 .footer {
-  background-color: #ffffff48;
+  background-color: #111;
   width: 100%;
   border-top: 5px solid #e71898;
+  margin-bottom: 0;
 }
 .follow {
-    font-size: large;
-    font-weight: bold;
-    color: #5c3f5c;
+  font-size: large;
+  font-weight: bold;
+  color: #fe9;
 }
 a {
-    text-decoration: none;
-    color: #5c3f5c;
+  text-decoration: none;
+  color: #fd9;
 }
 .soc {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+.copyrigth > p {
+    color: #fff;
 }

@@ -22,8 +22,14 @@ import Others from './Components/Categories/Others';
 import Portfolio from './Components/Portfolio/Portfolio';
 import CreatePortfolio from './Components/Create&LogIns/CreatePortfolio';
 import About from './Components/About';
+import { useAuthContext } from './Hooks/useAuthContext';
+import NotFound from './Neccessary/NotFound';
 
 function App() {
+  const { portfolio } = useAuthContext();
+
+  var dPort = JSON.parse(portfolio)
+  console.log(dPort);
   return (
     <div className="App">
       <Routes>
@@ -43,7 +49,7 @@ function App() {
           <Route path='/about' element={<About />} />
         </Route>
 
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );

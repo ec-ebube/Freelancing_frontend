@@ -1,0 +1,39 @@
+/* .not-found-page { */
+/* Your initial styles for the 404 page */
+/* } */
+
+.shake {
+  animation: shakeAnimation 1s ease-in-out infinite
+}
+
+@keyframes shakeAnimation {
+  0%,
+  100% {
+    transform: scale(1) rotate(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: scale(0.9) rotate(10deg);
+  }
+}
+
+/* @keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
