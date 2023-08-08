@@ -9,18 +9,33 @@
   font-weight: bold;
 }
 
+.shaking {
+  animation: shakeAnimation 3s ease-in-out infinite;
+  color: #e911d6;
+}
+
 .shake {
-  animation: shakeAnimation 1s ease-in-out infinite;
+  color: #8d7878;
 }
 
 @keyframes shakeAnimation {
   0%, 100% {
     transform: scale(1) rotate(0);
   }
-  10%, 30%, 50%, 70%, 90% {
+  1%, 10%{
+    transform: scale(1.1);
+  }
+  /*10%,*/ 30%, 50%, 70%/*, 90% */{
     transform: scale(1.1) rotate(-10deg);
   }
-  20%, 40%, 60%, 80% {
-    transform: scale(0.9) rotate(10deg);
+  /*20%,*/ 40%, 60%/*, 80%*/ {
+    transform: scale(1.1) rotate(10deg);
   }
+  99%, 90% {
+    transform: scale(1.1);
+  }
+}
+.four04 {
+  display: block;
+  color: #e15df0;
 }

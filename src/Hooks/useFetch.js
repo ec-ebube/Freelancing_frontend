@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const useFetch = (url) => {
+const useFetch = (url, token) => {
     const [error, setError] = useState(null)
     const [data, setData] = useState(null)
     const [isLoading, setIsLoading] = useState(true)
@@ -8,7 +8,9 @@ const useFetch = (url) => {
     useEffect(() => {
         const abortCont = new AbortController()
 
-        fetch(url)
+        fetch(url, {
+            headers: { Authorization: 'Bearer ' + token }
+        })
             .then(res => {
                 if (!res.ok) {
                     throw Error("Unable to fetch or Unauthorized Access");
@@ -27,8 +29,8 @@ const useFetch = (url) => {
                 setError(err.message)
             })
         return () => abortCont.abort()
-    }, [url])
-    return { data, isLoading, error}
+    }, [url, token])
+    return { data, isLoading, error }
 }
 
 export default useFetch;

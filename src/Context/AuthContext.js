@@ -24,7 +24,7 @@ export const AuthContextProvider = ({ children }) => {
     // console.log("AuthContext state", state);
 
     useEffect(() => {
-        const portfolio = localStorage.getItem('user');
+        const portfolio = localStorage.getItem('port');
 
         // var theUser = JSON.parse(user);
 

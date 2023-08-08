@@ -3,6 +3,7 @@ import useCreate from "../../Hooks/useCreate"
 // import { createPortfolio } from "../../EndPoints"
 import Loading from "../../Neccessary/Loading"
 import { CreatePortfolioURL } from "../../EndPoints"
+import { useNavigate } from 'react-router-dom'
 
 
 const CreatePortfolio = () => {
@@ -36,7 +37,7 @@ const CreatePortfolio = () => {
         }
     ]
 
-
+    const navigate = useNavigate();
     // console.log(forCategories);
 
     const [FirstName, setFirstName] = useState("")
@@ -73,6 +74,7 @@ const CreatePortfolio = () => {
             formdata.append('Password', Password)
 
             await createUser(CreatePortfolioURL, formdata)
+            navigate('/');
         } catch (error) {
 
         }

@@ -24,12 +24,19 @@ import CreatePortfolio from './Components/Create&LogIns/CreatePortfolio';
 import About from './Components/About';
 import { useAuthContext } from './Hooks/useAuthContext';
 import NotFound from './Neccessary/NotFound';
+import LoginPort from './Components/Create&LogIns/LoginPort';
+import Dashboard from './Components/Dashboard';
 
 function App() {
   const { portfolio } = useAuthContext();
 
-  var dPort = JSON.parse(portfolio)
-  console.log(dPort);
+  // var port = JSON.parse(localStorage.getItem('port'));
+    // var token = JSON.parse(portfolio.token);
+    // token = token.token;
+
+
+  // var dPort = JSON.parse(portfolio)
+  console.log(portfolio);
   return (
     <div className="App">
       <Routes>
@@ -46,6 +53,8 @@ function App() {
           <Route path='/category/others' element={<Others />} />
           <Route path='/portfolio/:username' element={<Portfolio />} />
           <Route path='/createportfolio' element={<CreatePortfolio />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/login' element={<LoginPort />} />
           <Route path='/about' element={<About />} />
         </Route>
 
