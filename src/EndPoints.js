@@ -5,3 +5,4 @@ export const singlePortfolio = baseUrl + "portfolio/get/"
 export const CreatePortfolioURL = baseUrl + "portfolio/create/";
 export const LoginPortURL = baseUrl + "login/logport";
 export const portSingle = baseUrl + "portfolio/getsingle/";
+export const CreateProject = baseUrl + "project/create";

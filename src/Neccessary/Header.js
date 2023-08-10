@@ -17,8 +17,8 @@ function Header() {
   const handleLogout = () => {
     logout();
   }
-  var singleUser = JSON.parse(portfolio)
-  console.log(singleUser)
+  // var singleUser = JSON.parse(portfolio)
+  // console.log(singleUser)
   return (
     <div>
 

@@ -7,6 +7,7 @@ import './Styles/Portfolio.css'
 import './Styles/CreatePort.css'
 import './Styles/About.css'
 import './Styles/Footer.css'
+import './Styles/Dashboard.css'
 import Header from './Neccessary/Header';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
@@ -26,6 +27,7 @@ import { useAuthContext } from './Hooks/useAuthContext';
 import NotFound from './Neccessary/NotFound';
 import LoginPort from './Components/Create&LogIns/LoginPort';
 import Dashboard from './Components/Dashboard';
+import CreatingProject from './Components/Create&LogIns/CreatingProject';
 
 function App() {
   const { portfolio } = useAuthContext();
@@ -36,7 +38,7 @@ function App() {
 
 
   // var dPort = JSON.parse(portfolio)
-  console.log(portfolio);
+  // console.log(portfolio);
   return (
     <div className="App">
       <Routes>
@@ -53,9 +55,10 @@ function App() {
           <Route path='/category/others' element={<Others />} />
           <Route path='/portfolio/:username' element={<Portfolio />} />
           <Route path='/createportfolio' element={<CreatePortfolio />} />
-          <Route path='/dashboard' element={<Dashboard />} />
+          {portfolio && <Route path='/dashboard' element={<Dashboard />} />}
           <Route path='/login' element={<LoginPort />} />
           <Route path='/about' element={<About />} />
+          <Route path='/pro' element={<CreatingProject />} />
         </Route>
 
         <Route path='*' element={<NotFound />} />
