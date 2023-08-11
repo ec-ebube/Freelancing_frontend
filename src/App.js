@@ -27,7 +27,9 @@ import { useAuthContext } from './Hooks/useAuthContext';
 import NotFound from './Neccessary/NotFound';
 import LoginPort from './Components/Create&LogIns/LoginPort';
 import Dashboard from './Components/Dashboard';
-import CreatingProject from './Components/Create&LogIns/CreatingProject';
+import AdminDashBoard from './Admin/AdminDashBoard';
+// import Projects from './Admin/Projects';
+import AdProj from './Admin/AdProj';
 
 function App() {
   const { portfolio } = useAuthContext();
@@ -58,7 +60,11 @@ function App() {
           {portfolio && <Route path='/dashboard' element={<Dashboard />} />}
           <Route path='/login' element={<LoginPort />} />
           <Route path='/about' element={<About />} />
-          <Route path='/pro' element={<CreatingProject />} />
+
+
+          {/* <Route path='/pro' element={<Projects />} /> */}
+          <Route path='/admin' element={<AdminDashBoard />} />
+          <Route path='/projects/:Id' element={<AdProj />} />
         </Route>
 
         <Route path='*' element={<NotFound />} />

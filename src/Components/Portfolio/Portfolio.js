@@ -23,17 +23,6 @@ function Portfolio() {
     })
   }
 
-  // const videoRef = React.useRef(null);
-
-  // const handleHover = () => {
-  //   videoRef.current.play();
-  // };
-
-  // const handleMouseLeave = () => {
-  //   videoRef.current.pause();
-  //   videoRef.current.currentTime = 0; // Resets the video to the beginning when hovering stops
-  // };
-
   return (
     <div className="PortBody">
       {isLoading && <div className='contLoad'><Loading /></div>}

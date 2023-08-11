@@ -3,3 +3,7 @@
     position: absolute;
     z-index: 10;
 }
+.adMedia {
+    width: 25%;
+    height: 50vh;
+}
